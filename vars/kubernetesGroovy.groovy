@@ -41,7 +41,7 @@ environment {
 		stage('DEPLOY') {
 			steps {
 				script { 
-					      sh 'kubectl get nodes"
+					      sh "kubectl get nodes"
 					}
 				} 
 			}
