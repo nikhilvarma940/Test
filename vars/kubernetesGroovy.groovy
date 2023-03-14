@@ -10,7 +10,7 @@ environment {
 		gitCredId = "${gitcred}"
 	}
 		
-	agent { label 'k8s_slave' }
+	agent { label 'k8s' }
 	
 
 	stages {
