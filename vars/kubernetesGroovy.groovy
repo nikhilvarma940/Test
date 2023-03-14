@@ -23,8 +23,7 @@ environment {
 		stage('BUILD IMAGE') { 
 			 steps { 
 				 script { 
-					 sh "docker build -t $registry:$dockerTag ."
-					 // dockerImage = docker.build("$registry:$dockerTag") 
+					 dockerImage = docker.build("$registry:$dockerTag", "$registryCredential" ) 
 				 }
 			} 
 		}
