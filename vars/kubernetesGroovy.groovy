@@ -41,7 +41,7 @@ environment {
 		stage('DEPLOY') {
 			steps {
 				script { 
-					      sh "kubectl set image deployment/webapp webapp="$registry:$dockerTag" --record"
+					      sh "kubectl set image deployment/webapp webapp=$registry:$dockerTag --record"
 					}
 				} 
 			}
