@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
-
 spec:
   selector:
     matchLabels:
@@ -12,8 +11,6 @@ spec:
     metadata:
       labels:
         app: nginx
-      annotations:
-        linkerd.io/inject: enabled
     spec:
       containers:
       - name: nginx
